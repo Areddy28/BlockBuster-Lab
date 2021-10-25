@@ -13,48 +13,54 @@ namespace BlockBusterLab
             {
                 List<string> Scenes = new List<string>();
 
-                BlockBuster blockbuster = new BlockBuster();
+                Movie m = new Movie("Star Wars", "Sci - fi", 92, "Luke I am you Father");
+                Movie m1 = new Movie("Deep Blue Sea", "Horror", 92, "Shark bites off arm");
+                Movie m2 = new Movie("Avengers End Game", "Action", 92, "Thanos kills daughter");
+                Movie m3 = new Movie("Batman Dark Knight", "Action", 92, "Why so Serious");
+                Movie m4 = new Movie("Lottery Ticket", "Comedy", 92, "When they win lottery ticket");
+                Movie m5 = new Movie("Friday", "Comedy", 92, "Big Worm KO's a person");
+                
 
 
 
-                List<Movie> movies = new List<Movie>();
+                //List<Movie> movies = new List<Movie>();
 
-                Movie movieOne = new Movie("Star Wars", "Sci-fi", 92, "Luke I am you Father");
-                Movie movieTwo = new Movie("Deep Blue Sea", "Horror", 92, "Shark bites off arm");
-                Movie movieThree = new Movie("Avengers End Game", "Action", 92, "Thanos kills daughter");
-                Movie movieFour = new Movie("Batman Dark Knight", "Action", 92, "Why so Serious");
-                Movie movieFive = new Movie("Lottery Ticket", "Comedy", 92, "When they win lottery ticket");
-                Movie movieSix = new Movie("Friday", "Comedy", 92, "Big Worm KO's a person");
+                //Movie movieOne = new Movie("Star Wars", "Sci-fi", 92, "Luke I am you Father");
+                //Movie movieTwo = new Movie("Deep Blue Sea", "Horror", 92, "Shark bites off arm");
+                //Movie movieThree = new Movie("Avengers End Game", "Action", 92, "Thanos kills daughter");
+                //Movie movieFour = new Movie("Batman Dark Knight", "Action", 92, "Why so Serious");
+                //Movie movieFive = new Movie("Lottery Ticket", "Comedy", 92, "When they win lottery ticket");
+                //Movie movieSix = new Movie("Friday", "Comedy", 92, "Big Worm KO's a person");
 
 
 
                 Console.WriteLine("Welcome to GC Blockbuster!");
                 Console.WriteLine();
                 Console.Write("Please Select a Movie from the list: ");
-                blockbuster.PrintMovies();
+                
                 Console.WriteLine();
                 Console.Write("Please select a movie you want to watch: ");
                 int userMovieInput = int.Parse(Console.ReadLine());
                 switch (userMovieInput)
                 {
                     case 1:
-                        Console.WriteLine(movieOne.ToString());
+                        Console.WriteLine(m.ToString());
 
                         break;
                     case 2:
-                        Console.WriteLine(movieTwo.ToString());
+                        Console.WriteLine(m1.ToString());
                         break;
                     case 3:
-                        Console.WriteLine(movieThree.ToString());
+                        Console.WriteLine(m2.ToString());
                         break;
                     case 4:
-                        Console.WriteLine(movieFour.ToString());
+                        Console.WriteLine(m3.ToString());
                         break;
                     case 5:
-                        Console.WriteLine(movieFive.ToString());
+                        Console.WriteLine(m4.ToString());
                         break;
                     case 6:
-                        Console.WriteLine(movieSix.ToString());
+                        Console.WriteLine(m5.ToString());
                         break;
 
                 }
