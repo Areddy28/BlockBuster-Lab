@@ -13,10 +13,10 @@ namespace BlockBusterLab
             this.CurrentTime = CurrentTime;
         }
 
-        public override void Play()
-        {
-            CurrentTime++;
-        }
+        //public override void Play()
+        //{
+        //    CurrentTime++;
+        //}
 
         public void Rewind()
         {

@@ -25,16 +25,24 @@ namespace BlockBusterLab
         }
 
 
+        public virtual void PrintInfo()
+        {
+            Console.WriteLine($"Title: {Title}");
+            Console.WriteLine($"Category: {Category}");
+            Console.WriteLine($"RunTime: {RunTime}");
+
+
+        }
+
         public override string ToString()
         {
-            string output = $"Title: {Title}";
+
+
+            string output = ($"Title: {Title}");
             output += $"Category: {Category}";
-            output += $"Runtime: {RunTime}";
-           
+            output += $"RunTime: {RunTime}";
+            return output;
 
-            
-
-            return output; 
         }
 
         public void PrintScenes()

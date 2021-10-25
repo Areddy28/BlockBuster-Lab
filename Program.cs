@@ -19,7 +19,12 @@ namespace BlockBusterLab
                 Movie m3 = new Movie("Batman Dark Knight", "Action", 92, "Why so Serious");
                 Movie m4 = new Movie("Lottery Ticket", "Comedy", 92, "When they win lottery ticket");
                 Movie m5 = new Movie("Friday", "Comedy", 92, "Big Worm KO's a person");
-                
+                //m.ToString();
+                //m1.ToString();
+                //m2.ToString();
+                //m3.ToString();
+                //m4.ToString();
+                //m5.ToString(); 
 
 
 
@@ -37,7 +42,13 @@ namespace BlockBusterLab
                 Console.WriteLine("Welcome to GC Blockbuster!");
                 Console.WriteLine();
                 Console.Write("Please Select a Movie from the list: ");
-                
+                m.PrintInfo();
+                m1.PrintInfo();
+                m2.PrintInfo();
+                m3.PrintInfo();
+                m4.PrintInfo();
+                m5.PrintInfo();
+
                 Console.WriteLine();
                 Console.Write("Please select a movie you want to watch: ");
                 int userMovieInput = int.Parse(Console.ReadLine());
