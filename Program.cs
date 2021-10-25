@@ -34,8 +34,8 @@ namespace BlockBusterLab
                 blockbuster.PrintMovies();
                 Console.WriteLine();
                 Console.Write("Please select a movie you want to watch: ");
-                int userMovieChoice = int.Parse(Console.ReadLine());
-                switch (userMovieChoice)
+                int userMovieInput = int.Parse(Console.ReadLine());
+                switch (userMovieInput)
                 {
                     case 1:
                         Console.WriteLine(movieOne.ToString());
@@ -57,12 +57,9 @@ namespace BlockBusterLab
                         Console.WriteLine(movieSix.ToString());
                         break;
 
-
-
-
-
-
                 }
+
+                
 
 
                 Console.WriteLine();
