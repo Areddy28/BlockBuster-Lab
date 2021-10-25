@@ -19,12 +19,12 @@ namespace BlockBusterLab
 
                 List<Movie> movies = new List<Movie>();
 
-                Movie movieOne = new Movie("Star Wars", "Sci-fi", 92);
-                Movie movieTwo = new Movie("Deep Blue Sea", "Horror", 92);
-                Movie movieThree = new Movie("Avengers End Game", "Action", 92);
-                Movie movieFour = new Movie("Batman Dark Knight", "Action", 92);
-                Movie movieFive = new Movie("Lottery Ticket", "Comedy", 92);
-                Movie movieSix = new Movie("Friday", "Comedy", 92);
+                Movie movieOne = new Movie("Star Wars", "Sci-fi", 92, "Luke I am you Father");
+                Movie movieTwo = new Movie("Deep Blue Sea", "Horror", 92, "Shark bites off arm");
+                Movie movieThree = new Movie("Avengers End Game", "Action", 92, "Thanos kills daughter");
+                Movie movieFour = new Movie("Batman Dark Knight", "Action", 92, "Why so Serious");
+                Movie movieFive = new Movie("Lottery Ticket", "Comedy", 92, "When they win lottery ticket");
+                Movie movieSix = new Movie("Friday", "Comedy", 92, "Big Worm KO's a person");
 
 
 
@@ -58,6 +58,8 @@ namespace BlockBusterLab
                         break;
 
                 }
+
+                
 
                 
 
