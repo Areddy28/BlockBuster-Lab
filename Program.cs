@@ -11,14 +11,13 @@ namespace BlockBusterLab
 
             while (returnToMain)
             {
-                List<string> Scenes = new List<string>();
 
-                Movie m = new Movie("Star Wars", "Sci - fi", 92, "Luke I am you Father");
-                Movie m1 = new Movie("Deep Blue Sea", "Horror", 92, "Shark bites off arm");
-                Movie m2 = new Movie("Avengers End Game", "Action", 92, "Thanos kills daughter");
-                Movie m3 = new Movie("Batman Dark Knight", "Action", 92, "Why so Serious");
-                Movie m4 = new Movie("Lottery Ticket", "Comedy", 92, "When they win lottery ticket");
-                Movie m5 = new Movie("Friday", "Comedy", 92, "Big Worm KO's a person");
+
+                BlockBuster b = new BlockBuster();
+                b.PrintMovies();  
+
+
+
                 //m.ToString();
                 //m1.ToString();
                 //m2.ToString();
@@ -39,40 +38,43 @@ namespace BlockBusterLab
 
 
 
-                Console.WriteLine("Welcome to GC Blockbuster!");
-                Console.WriteLine();
-                Console.Write("Please Select a Movie from the list: ");
-                m.PrintInfo();
-                m1.PrintInfo();
-                m2.PrintInfo();
-                m3.PrintInfo();
-                m4.PrintInfo();
-                m5.PrintInfo();
+                //Console.WriteLine("Welcome to GC Blockbuster!");
+                //Console.WriteLine();
+                //Console.Write("Please Select a Movie from the list: ");
+                //m.PrintInfo();
+                //m1.PrintInfo();
+                //m2.PrintInfo();
+                //m3.PrintInfo();
+                //m4.PrintInfo();
+                //m5.PrintInfo();
 
-                Console.WriteLine();
-                Console.Write("Please select a movie you want to watch: ");
-                int userMovieInput = int.Parse(Console.ReadLine());
-                switch (userMovieInput)
-                {
-                    case 1:
-                        Console.WriteLine(m.ToString());
+                //Console.WriteLine();
+                //Console.Write("Please select a movie you want to watch: ");
+                //int userMovieInput = int.Parse(Console.ReadLine());
+                //switch (userMovieInput)
+                //{
+                //    case 1:
+                //        m.PrintInfo(); 
 
-                        break;
-                    case 2:
-                        Console.WriteLine(m1.ToString());
-                        break;
-                    case 3:
-                        Console.WriteLine(m2.ToString());
-                        break;
-                    case 4:
-                        Console.WriteLine(m3.ToString());
-                        break;
-                    case 5:
-                        Console.WriteLine(m4.ToString());
-                        break;
-                    case 6:
-                        Console.WriteLine(m5.ToString());
-                        break;
+                //        break;
+                //    case 2:
+                //        m1.PrintInfo(); 
+                //        break;
+                //    case 3:
+                //        m2.PrintInfo(); 
+                //        break;
+                //    case 4:
+                //        m3.PrintInfo(); 
+                //        break;
+                //    case 5:
+                //        m4.PrintInfo();
+                //        break;
+                //    case 6:
+                //        m5.PrintInfo();
+                //        break;
+
+                         
+                       // d.Play();
 
                 }
 
@@ -94,7 +96,7 @@ namespace BlockBusterLab
                     Console.WriteLine("Thanks, Bye!");
                 }
 
-            }
+            
 
 
         }

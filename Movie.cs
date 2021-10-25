@@ -15,7 +15,7 @@ namespace BlockBusterLab
 
         //Constructor goes here
 
-        public Movie (string Title, string Category, int Runtime, params string[] Scenes)
+        public Movie (string Title, string Category, int Runtime, params string [] Scenes)
         {
             this.Title = Title;
             this.Category = Category;
@@ -30,6 +30,7 @@ namespace BlockBusterLab
             Console.WriteLine($"Title: {Title}");
             Console.WriteLine($"Category: {Category}");
             Console.WriteLine($"RunTime: {RunTime}");
+            Console.WriteLine($"Scenes: {Scenes}");
 
 
         }

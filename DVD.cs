@@ -17,13 +17,13 @@ namespace BlockBusterLab
 
         //DVDs will let you skip to any scene at any time
         //so we will ask the user what scene they want to watch
-        //public override void Play()
-        //{
-        //    PrintScenes();
-        //    Console.WriteLine("Which scence would you like to watch? (select by index)");
-        //    int pick = int.Parse(Console.ReadLine());
-        //    string scene = Scenes[pick];
-        //    Console.WriteLine(scene);
-        //}
+        public void Play()
+        {
+            PrintScenes();
+            Console.WriteLine("Which scence would you like to watch? (select by index)");
+            int pick = int.Parse(Console.ReadLine());
+            string scene = Scenes[pick];
+            Console.WriteLine(scene);
+        }
     }
     }
